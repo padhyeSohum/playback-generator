@@ -11,10 +11,15 @@ const Home = () => {
                 <div className="">
                     <h1>Playback Generator</h1>
                 </div>
-                <div>
-                    <label></label>
-                    <input type="text" value={playbackKey} onChange={(e) => setPlaybackKey(e.target.value)} />
-                    <input type="number" value={numNotes} onChange={(e) => setNumNotes(Math.max(0, parseInt(e.target.value)))} />
+                <div className="flex flex-col">
+                    <div>
+                        <p>Key</p>
+                        <input type="text" value={playbackKey} onChange={(e) => setPlaybackKey(e.target.value)} />
+                    </div>
+                    <div>
+                        <p>Number of notes</p>
+                        <input type="number" value={numNotes} onChange={(e) => setNumNotes(Math.max(0, parseInt(e.target.value)))} />
+                    </div>
                 </div>
             </div>
         </div>
