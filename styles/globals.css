@@ -1,11 +1,23 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+    --cozy-gray: #272727;
+    --theme-blue: #89A8C6;
+}
 
 * {
-    font-family: "Inter";
+    color: white;
+    font-family: "Helvetica", sans-serif;
+    font-weight: normal;
 }
 
 body {
-    background: cornflowerblue;
+    background: var(--cozy-gray);
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: bold;
 }
